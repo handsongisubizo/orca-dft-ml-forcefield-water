@@ -10,7 +10,7 @@ This project develops a high-accuracy machine learning force field for water clu
 
 - Perform DFT calculations on water clusters using ORCA  
 - Extract energies, forces, and optimized geometries from ORCA outputs  
-- Train a neural network potential (e.g., NequIP)  
+- Train a neural network potential (NequIP)  
 - Evaluate model predictions by comparing with:
   - Experimental data  
   - Classical force fields (TIP3P, SPC/E)
