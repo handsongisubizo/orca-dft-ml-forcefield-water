@@ -48,7 +48,6 @@ The ML force field will be evaluated against experimental data and TIP3P/SPC/E m
 - Others 
 
 
----
 
 ## Author
 Handson Gisubizo 
@@ -56,4 +55,4 @@ MSE ChemBE @ Johns Hopkins University
 GitHub: [handsongisubizo](https://github.com/handsongisubizo) 
 Email: hgisubi1@jh.edu
 
----
+
