@@ -1,36 +1,35 @@
-
 # ORCA DFT-Based Machine Learning Force Field for Water Molecules
 
-This project aims to develop a high-accuracy, machine learning-based force field for water clusters using **Density Functional Theory (DFT)** calculations performed with **ORCA**. The trained model will replicate quantum-level interactions and be evaluated by comparing its predictions with **experimental data** and **standard force fields** such as **TIP3P** and **SPC/E**.
+This project develops a high-accuracy machine learning force field for water clusters using Density Functional Theory (DFT) calculations from ORCA. The trained model will replicate quantum-level interactions and be validated against experimental data and classical models such as TIP3P and SPC/E.
 
->  Project Status: Actively in Progress – Files, data, and training results will be uploaded progressively.
+> Project Status: In Progress — Files, data, and training results will be uploaded progressively.
 
 ---
 
-##  Objectives
+## Objectives
 
-- Perform DFT calculations on water clusters using ORCA 
-- Extract forces, energies, and optimized geometries from ORCA outputs 
-- Train a machine learning potential using frameworks like **NequIP** 
-- Compare predicted physical and thermodynamic properties with:
-  - Experimental reference data
+- Perform DFT calculations on water clusters using ORCA  
+- Extract energies, forces, and optimized geometries from ORCA outputs  
+- Train a neural network potential (e.g., NequIP)  
+- Evaluate model predictions by comparing with:
+  - Experimental data  
   - Classical force fields (TIP3P, SPC/E)
 
 ---
 
-##  Tools
+## Tools
 
-| Tool       | Role                                  |
-|------------|---------------------------------------|
-| **ORCA**   | DFT calculations (energies, forces, geometries) |
-| **ASE**    | Molecular modeling & job automation   |
-| **Python** | Data parsing, conversion, and scripting |
-| **NequIP** | E(3)-equivariant neural network training |
-| **Ovito**  | Molecular structure visualization     |
+| Tool       | Purpose                                        |
+|------------|------------------------------------------------|
+| ORCA       | DFT calculations (energies, forces, geometries)|
+| ASE        | Molecular modeling and job automation          |
+| Python     | Parsing, conversion, scripting                 |
+| NequIP     | E(3)-equivariant neural network training       |
+| Ovito      | Structure visualization                        |
 
 ---
 
-##  Workflow
+## Workflow
 
 ```mermaid
 graph TD
@@ -39,33 +38,14 @@ graph TD
     C --> D[Train Neural Network (e.g., NequIP)]
     D --> E[Predict Molecular Behavior]
     E --> F[Compare with Experimental & TIP3P/SPC/E Results]
-```
-
----
-
-## Folder Structure (Plan)
-
-```bash
-orca-dft-ml-forcefield-water/
-├── orca_dft/            # Input/output files for ORCA
-├── data_extraction/     # Python scripts for parsing ORCA results
-├── training_data/       # Cleaned data for ML model input
-├── nequip_training/     # Training scripts, config files, logs
-├── analysis/            # Evaluation scripts and plots
-├── results/             # Benchmark results and comparisons
-├── README.md
-└── requirements.txt     # Required packages and dependencies
-```
-
----
+    
+    
 
 ## Properties for Evaluation
 
 The ML force field will be evaluated against experimental data and TIP3P/SPC/E models for:
-
-- Radial Distribution Functions (RDF)
 - Bond length and angle distributions
-- Dipole moment
+- Others 
 
 
 ---
