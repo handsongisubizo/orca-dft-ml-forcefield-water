@@ -6,45 +6,6 @@ This project develops a high-accuracy machine learning force field for water clu
 
 ---
 
-## Objectives
-
-- Perform DFT calculations on water clusters using ORCA  
-- Extract energies, forces, and optimized geometries from ORCA outputs  
-- Train a neural network potential (NequIP)  
-- Evaluate model predictions by comparing with:
-  - Experimental data  
-  - Classical force fields (TIP3P, SPC/E)
-
----
-
-## Tools
-
-| Tool       | Purpose                                        |
-|------------|------------------------------------------------|
-| ORCA       | DFT calculations (energies, forces, geometries)|
-| ASE        | Molecular modeling and job automation          |
-| Python     | Parsing, conversion, scripting                 |
-| NequIP     | E(3)-equivariant neural network training       |
-| Ovito      | Structure visualization                        |
-
----
-
-## Workflow
-
-graph TD
-    A[Build Water Clusters] --> B[Run ORCA DFT Calculations]
-    B --> C[Extract Forces, Energies, and Coordinates]
-    C --> D[Train Neural Network (e.g., NequIP)]
-    D --> E[Predict Molecular Behavior]
-    E --> F[Compare with Experimental & TIP3P/SPC/E Results]
-    
-    
-
-## Properties for Evaluation
-
-The ML force field will be evaluated against experimental data and TIP3P/SPC/E models for:
-- Bond length and angle distributions
-- Others 
 
 
 
